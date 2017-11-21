@@ -16,7 +16,7 @@
 # limitations under the License
 # ------------------------------------------------------------------------
 
-# hack to work in minikube
+# hack to work in minikube/local k8s cluster
 kubectl patch storageclass standard -p '{"metadata": {"annotations":{"storageclass.beta.kubernetes.io/is-default-class":"false"}}}'
 kubectl patch storageclass standard -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"false"}}}'
 
